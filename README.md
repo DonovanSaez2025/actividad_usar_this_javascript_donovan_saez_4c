@@ -1,2 +1,7 @@
-# actividad_usar_this_javascript_donovan_saez_4c
-Actividad mientras el profe no está
+# Formulario this
+**Autor**: Donovan Sáez R.
+
+**Contacto**: donovansaez@liceovvh.cl
+
+## Descripción
+Un ejercicio de validación de formularios usando "this".
