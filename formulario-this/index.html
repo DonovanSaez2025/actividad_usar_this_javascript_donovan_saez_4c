@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="donovansaez@liceovvh.cl">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Uso de this</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 (guiado) -->
+    <div class="row">
+        <h2>Formulario de prueba</h2>
+        <input type="text" placeholder="Escribe tu nombre" onfocus="resaltar(this)" onblur="normal(this)">
+    </div>
+
+    <!-- Ejercicio 2 (práctica) -->
+    <div class="row">
+        <h2>Actividad práctica</h2>
+        <form onsubmit="return validarFormulario(this)">
+            <label>Correo electrónico:</label><br>
+            <input type="email" name="correo"><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- Ejercicio 3 (autonómo)-->
+    <div class="row">
+        <h2>Actividad autonóma</h2>
+        <form onsubmit="return validarFormPractico(this)">
+            <div class="form-section">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" onfocus="resaltarInput(this)" onblur="normalInput(this)">
+            </div>
+            <div class="form-section">
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" onfocus="resaltarInput(this)" onblur="normalInput(this)">
+            </div>
+            <div class="form-section">
+                <button type="submit">Enviar</button>
+                <p id="mensajeForm"></p>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
